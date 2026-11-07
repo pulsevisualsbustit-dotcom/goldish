@@ -1,0 +1,28 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.velora.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ChatScreenMixin",
+    "ClientCommonNetworkHandlerMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "PlayerInteractEntityC2SPacketAccessor",
+    "ClientPlayerEntityAccessor",
+    "ClientPlayerEntityMixin",
+    "ClientPlayerInteractionManagerAccessor",
+    "ClientPlayerInteractionManagerMixin",
+    "EntityRendererMixin",
+    "GameRendererMixin",
+    "InGameHudMixin",
+    "InGameHudRemovalsMixin",
+    "LightmapTextureManagerMixin",
+    "MinecraftClientAccessor",
+    "MinecraftClientMixin",
+    "ScreenAccessor",
+    "TitleScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "nickname": "Goldishka",
+  "mc_version": "1.21.11",
+  "loader_version": "0.19.5",
+  "memory_gb": 3,
+  "java": "",
+  "game_dir": "",
+  "jvm_args": "",
+  "game_args": "",
+  "hide_on_launch": true,
+  "show_console": false,
+  "check_updates": true,
+  "notifications": true,
+  "animations": true,
+  "particles": true,
+  "theme": "gold",
+  "background": "gold",
+  "window_width": 1080,
+  "window_height": 700,
+  "servers": [
+    {
+      "name": "HolyWorld",
+      "address": "mc.holyworld.ru",
+      "version": "1.21.11",
+      "description": "Выживание и мини-игры",
+      "tag": "Выживание",
+      "color": "#F6C453",
+      "builtin": true
+    },
+    {
+      "name": "MineBlaze",
+      "address": "mc.mineblaze.net",
+      "version": "1.21.11",
+      "description": "Мини-игры и PvP",
+      "tag": "Мини-игры",
+      "color": "#63B3FF",
+      "builtin": true
+    },
+    {
+      "name": "FunTime",
+      "address": "mc.funtime.su",
+      "version": "1.21.11",
+      "description": "Анархия и гриф",
+      "tag": "Анархия",
+      "color": "#FF8A5C",
+      "builtin": true
+    },
+    {
+      "name": "RealyWorld",
+      "address": "mc.realyworld.net",
+      "version": "1.21.11",
+      "description": "Мини-игры для компании",
+      "tag": "Мини-игры",
+      "color": "#7BD0FF",
+      "builtin": true
+    },
+    {
+      "name": "BlackHawk",
+      "address": "mc.blackhawk.ru",
+      "version": "1.21.11",
+      "description": "Анархия, гриф, кланы",
+      "tag": "Анархия",
+      "color": "#C79BFF",
+      "builtin": true
+    },
+    {
+      "name": "AresMine",
+      "address": "mc.aresmine.ru",
+      "version": "1.21.11",
+      "description": "Выживание и экономика",
+      "tag": "Выживание",
+      "color": "#7BE8AC",
+      "builtin": true
+    },
+    {
+      "name": "Phoenix",
+      "address": "mc.phoenixmc.ru",
+      "version": "1.21.11",
+      "description": "Анархия и PvP",
+      "tag": "Анархия",
+      "color": "#FF7A6B",
+      "builtin": true
+    },
+    {
+      "name": "LoliLand",
+      "address": "mc.loliland.ru",
+      "version": "1.21.11",
+      "description": "Мини-игры и скайблок",
+      "tag": "Мини-игры",
+      "color": "#FFA9D9",
+      "builtin": true
+    },
+    {
+      "name": "Hypixel",
+      "address": "mc.hypixel.net",
+      "version": "1.21.11",
+      "description": "Крупнейший мини-игровой сервер",
+      "tag": "Мини-игры",
+      "color": "#F6C453",
+      "builtin": true
+    },
+    {
+      "name": "2B2T",
+      "address": "2b2t.org",
+      "version": "1.21.11",
+      "description": "Анархия без правил",
+      "tag": "Анархия",
+      "color": "#B8B8B8",
+      "builtin": true
+    },
+    {
+      "name": "MST Network",
+      "address": "mc.mstnetwork.ru",
+      "version": "1.21.11",
+      "description": "Выживание с друзьями",
+      "tag": "Выживание",
+      "color": "#63D6C6",
+      "builtin": true
+    }
+  ],
+  "last_page": "appearance",
+  "first_run": true
+}

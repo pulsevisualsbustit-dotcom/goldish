@@ -1,0 +1,24 @@
+# Нормализация переводов строк
+* text=auto
+
+*.java    text diff=java
+*.gradle  text
+*.md      text
+*.py      text
+*.pyw     text
+*.json    text
+*.yml     text
+*.yaml    text
+*.properties text
+*.ps1     text
+
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.sh      text eol=lf
+gradlew   text eol=lf
+
+*.class   binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.ico     binary

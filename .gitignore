@@ -1,0 +1,66 @@
+# ---------- Gradle / Loom ----------
+.gradle/
+.gradle-home/
+build/
+!loader/goldishka/core/agent/classes/
+out/
+bin/
+*.hprof
+
+# ---------- IDE ----------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+nbproject/
+
+# ---------- OS ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------- Запуск игры / dev-run ----------
+run/
+run-test.out
+run-test.err
+*.log
+logs/
+
+# ---------- Лаунчер: игровая папка и скачанные файлы (гигабайты) ----------
+loader/game/
+loader/logs/
+loader/dist/
+loader/build/
+loader/_internal/
+!loader/dist/README.md
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# ---------- Секреты и локальные конфиги ----------
+*.jar
+!loader/goldishka/core/agent/**/*.class
+*.zip
+*.exe
+*.dll
+!loader/dist/README.md
+env*.local
+*.pem
+*.key
+.secrets/
+
+# ---------- Мусор Windows-копирований ----------
+* - копия.*
+*Копия*
+~$*

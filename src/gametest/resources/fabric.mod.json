@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "velora-test",
+  "version": "1.0.0",
+  "name": "Velora Client Game Tests",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-client-gametest": [
+      "dev.velora.gametest.VeloraClientGameTest"
+    ]
+  },
+  "depends": {
+    "velora": "*",
+    "fabric-client-gametest-api-v1": "*"
+  }
+}

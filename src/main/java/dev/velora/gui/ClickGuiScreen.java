@@ -758,12 +758,12 @@ public class ClickGuiScreen extends Screen {
             }
         }
 
-        /** Editable chip for free-form values such as the Discord app id. */
+        /** Editable chip for free-form values. */
         private void renderTextSetting(DrawContext context, TextSetting setting, float settingY,
                                        float labelY, boolean hovered, int accent) {
             boolean editing = editingText == setting;
             String value = editing ? textBuffer.toString() : setting.getValue();
-            String shown = value.isEmpty() ? "App ID" : value;
+            String shown = value.isEmpty() ? "Type..." : value;
             // Start the chip after the label so long names such as "Logo asset"
             // never run underneath it, then use every pixel up to the panel edge.
             float chipX = Math.max(x + 46f,

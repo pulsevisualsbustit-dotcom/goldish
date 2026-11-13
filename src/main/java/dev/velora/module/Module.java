@@ -155,6 +155,16 @@ public abstract class Module {
     }
 
     /**
+     * {@code true} for modules that must also tick while no world is loaded
+     * (the Discord presence has to update on the main menu as well). Such
+     * modules are ticked from {@link ModuleManager#onGlobalTick()} instead of
+     * {@link ModuleManager#onTick()}.
+     */
+    public boolean ticksOutsideWorld() {
+        return false;
+    }
+
+    /**
      * {@code true} for modules whose packets must be sent before the movement
      * packet of the tick (vanilla input order). GrimAC's "Post" check kicks
      * clients that send attacks/uses after the flying packet, so those modules

@@ -102,7 +102,7 @@ public final class ModuleManager {
 
     public void onTick() {
         for (Module module : modules) {
-            if (module.isEnabled() && !module.ticksBeforeMovement()) {
+            if (module.isEnabled() && !module.ticksBeforeMovement() && !module.ticksOutsideWorld()) {
                 try {
                     module.onTick();
                 } catch (Throwable throwable) {
@@ -111,6 +111,23 @@ public final class ModuleManager {
             }
             if (module.getAnimation() != (module.isExpanded() ? 1f : 0f)) {
                 module.updateAnimation(1f);
+            }
+        }
+    }
+
+    /**
+     * Runs modules that also tick outside a world. Called every client tick,
+     * before the "player is in a world" check, so things such as the Discord
+     * presence keep working in the main menu.
+     */
+    public void onGlobalTick() {
+        for (Module module : modules) {
+            if (module.isEnabled() && module.ticksOutsideWorld()) {
+                try {
+                    module.onTick();
+                } catch (Throwable throwable) {
+                    Velora.LOGGER.error("Module {} failed while ticking globally", module.getName(), throwable);
+                }
             }
         }
     }

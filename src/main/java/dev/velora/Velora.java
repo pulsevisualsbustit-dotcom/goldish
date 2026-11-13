@@ -196,11 +196,14 @@ public final class Velora implements ClientModInitializer {
         }
 
         if (mc().player == null || mc().world == null) {
+            // Modules such as the Discord presence still need a tick in menus.
+            moduleManager.onGlobalTick();
             releaseHeldModules();
             return;
         }
 
         handleModuleKeys();
+        moduleManager.onGlobalTick();
         moduleManager.onTick();
     }
 
